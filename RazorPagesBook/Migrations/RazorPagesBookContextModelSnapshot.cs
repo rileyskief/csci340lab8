@@ -29,10 +29,13 @@ namespace RazorPagesBook.Migrations
                     b.Property<decimal>("Price")
                         .HasColumnType("TEXT");
 
-                    b.Property<DateTime>("ReleaseDate")
+                    b.Property<DateTime>("ReleasedDate")
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Title")
+                        .HasColumnType("TEXT");
+                    
+                    b.Property<string>("Author")
                         .HasColumnType("TEXT");
 
                     b.HasKey("Id");
