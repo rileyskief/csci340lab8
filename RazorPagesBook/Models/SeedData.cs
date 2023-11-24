@@ -26,7 +26,7 @@ public static class SeedData
                 new Book
                 {
                     Title = "The Hunt for Red October",
-                    ReleaseDate = DateTime.Parse("1984-10-1"),
+                    PublishedDate = DateTime.Parse("1984-10-1"),
                     Author = "Tom Clancy",
                     Price = 9.89M
                 },
@@ -34,7 +34,7 @@ public static class SeedData
                 new Book
                 {
                     Title = "All That Remains",
-                    ReleaseDate = DateTime.Parse("1992-4-15"),
+                    PublishedDate = DateTime.Parse("1992-4-15"),
                     Author = "Patricia Cornwell",
                     Price = 8.50M
                 },
@@ -42,7 +42,7 @@ public static class SeedData
                 new Book
                 {
                     Title = "Gone With the Wind",
-                    ReleaseDate = DateTime.Parse("1936-6-30"),
+                    PublishedDate = DateTime.Parse("1936-6-30"),
                     Author = "Margaret Mitchell",
                     Price = 18.58M
                 },
@@ -50,7 +50,7 @@ public static class SeedData
                 new Book
                 {
                     Title = "White Jacket",
-                    ReleaseDate = DateTime.Parse("1850-1-23"),
+                    PublishedDate = DateTime.Parse("1850-1-23"),
                     Author = "Herman Melville",
                     Price = 19.95M
                 }

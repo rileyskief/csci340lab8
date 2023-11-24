@@ -25,7 +25,7 @@ namespace RazorPagesBook.Pages.Books
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
-            if (id == null)
+            if (id == null || _context.Book == null)
             {
                 return NotFound();
             }
@@ -71,7 +71,7 @@ namespace RazorPagesBook.Pages.Books
 
         private bool BookExists(int id)
         {
-            return _context.Book.Any(e => e.Id == id);
+          return _context.Book.Any(e => e.Id == id);
         }
     }
 }

@@ -29,7 +29,7 @@ namespace RazorPagesBook.Migrations
                     b.Property<decimal>("Price")
                         .HasColumnType("TEXT");
 
-                    b.Property<DateTime>("ReleaseDate")
+                    b.Property<DateTime>("PublishedDate")
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Title")

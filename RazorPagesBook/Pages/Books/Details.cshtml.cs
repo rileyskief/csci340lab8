@@ -19,11 +19,11 @@ namespace RazorPagesBook.Pages.Books
             _context = context;
         }
 
-        public Book Book { get; set; } = default!;
+      public Book Book { get; set; } = default!;
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
-            if (id == null)
+            if (id == null || _context.Book == null)
             {
                 return NotFound();
             }
@@ -33,7 +33,7 @@ namespace RazorPagesBook.Pages.Books
             {
                 return NotFound();
             }
-            else
+            else 
             {
                 Book = book;
             }
